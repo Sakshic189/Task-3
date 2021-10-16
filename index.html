@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Responsive Portfolio Website Design For Beginners</title>
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="fonts/google-fonts.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- header section starts -->
+
+<header>
+
+<nav>
+    <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skill">skills</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+</nav>
+
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts -->
+
+<section id="home">
+
+   <div class="content">
+
+    <h1>Hi, <br>
+    I am <span>Sakshi Chaudhari</span>
+    </h1>
+
+    <h1>
+        I am a <span>Web Developer at Technophile Bud</span>
+    </h1>
+    <a href="#about"><button>about me</button></a>
+
+    <div class="icons">
+        <a href="#" class="fab fa-facebook-square"></a>
+        <a href="#" class="fab fa-twitter-square"></a>
+        <a href="#" class="fab fa-instagram-square"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+   </div> 
+
+
+   <div class="image">
+       <img src="img1.png" alt="" style="margin: 20px; padding: 20px;">
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- about section starts  -->
+
+<section id="about">
+
+<h1>about</h1>
+
+<div class="wrapper">
+
+<div class="image">
+    <img src="" alt="">
+</div>
+<img src="img2.png" style="width: 50rem;"> 
+<div class="content">
+    <h3>My name is Sakshi Chaudhari</h3>
+    <p>I'm last year student of Computer Engineering,I have knowledge about HTML, CSS, JAVASCRIPT, JAVA, OOP and DBMS.</p><br>
+    <p>I have completed two internships </p>
+    <p>1.Intern Academy Web Developer Internship</p>
+    <p>2. Mind Glance Web Development Internship</p>
+    <a href="#"><button>download resume</button></a>
+</div>
+
+</div>
+
+</section>
+
+<!-- about section ends  -->
+
+<!-- skills section starts  -->
+
+<section id="skill">
+
+<h1>skills</h1>
+
+<div class="wrapper">
+
+    <div class="image">
+        
+        <img src="img3.png" alt="">
+    </div>
+
+    <div class="progress">
+
+        <h3>html</h3>
+        <div class="line line1"><span class="fill"></span></div>
+
+        <h3>css</h3>
+        <div class="line line2"><span class="fill"></span></div>
+
+        <h3>javascript</h3>
+        <div class="line line3"><span class="fill"></span></div>
+
+        <h3>JAVA</h3>
+        <div class="line line4"><span class="fill"></span></div>
+
+        <h3>OOP</h3>
+        <div class="line line5"><span class="fill"></span></div>
+
+        <h3>DBMS</h3>
+        <div class="line line6"><span class="fill"></span></div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- skills section ends  -->
+
+
+
+<!-- contact section starts  -->
+
+<section id="contact">
+
+<h1>contact</h1>
+
+<div class="wrapper">
+
+<div class="info">
+
+    <div class="item">
+        <h2><i class="fas fa-map-marker-alt"></i> address </h2>
+        <p>pune,<br>
+            maharashtra,<br>
+            india- 410501.  
+          </p>
+    </div>
+
+    <div class="item">
+        <h2><i class="fas fa-envelope"></i> e-mail </h2>
+        <p>sakshichaudhari18@gmail.com</p>
+    </div>
+
+    <div class="item">
+        <h2><i class="fas fa-phone"></i> phone </h2>
+        <p>+91385769967</p>
+    </div>
+
+</div>
+
+<form action="">
+
+    <div class="inputBox">
+        <h3>full name</h3>
+        <input type="text">
+    </div>
+
+    <div class="inputBox">
+        <h3>e-mail</h3>
+        <input type="email">
+    </div>
+
+    <div class="inputBox">
+        <h3>message</h3>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <input type="submit" value="send">
+
+</form>
+
+</div>
+
+
+</section>
+
+<!-- contact section ends  -->
+
+
+<!-- footer section starts  -->
+
+<section id="footer">
+
+    <a href="logo.png" class="logo"><h1></h1></a>
+
+    <div class="icons">
+        <a href="#" class="fab fa-facebook-square"></a>
+        <a href="#" class="fab fa-twitter-square"></a>
+        <a href="#" class="fab fa-instagram-square"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+    <p style="font-size: 3rem; color: rgb(244, 250, 250);">MY@portfolio.com</p><br>
+<h3 style="color: rgb(182, 61, 196);">3967,Pune,post office box 353</h3>
+    <h1>&copy; copyright @ 2021 by <span>ms. Sakshi Chaudhari</span></h1>
+
+</section>
+
+<!-- footer section ends  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery/js part -->
+
+
+<script>
+
+$(document).ready(function(){
+
+    $('.fa-bars').click(function(){
+        $(this).toggleClass('fa-times');
+        $('nav').toggleClass('nav-toggle');
+    });
+
+    $('nav ul li a').click(function(){
+        $('.fa-bars').removeClass('fa-times');
+        $('nav').removeClass('nav-toggle');
+    });
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() < 20){
+            $('header').css('box-shadow','none');
+        }else{
+            $('header').css('box-shadow','0 .2rem .5rem #333');
+        }
+    });
+
+});
+
+</script>
+
+</body> 
+</html>
